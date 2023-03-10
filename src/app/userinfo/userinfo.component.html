@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-1"> </div>
+    <div class="col-md-10"> 
+        <div class="card">
+            <div class="card-header">
+                <p>User Information</p>
+            </div>
+            <div class="card-body">
+               <table class="table table-dark">
+                <tr>
+                    <th>Person Name</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                </tr>
+                <tr *ngFor="let usr of allUsers  | async">
+                    <td>{{usr.uname}}</td>
+                    <td>{{usr.id}}</td>
+                    <td>{{usr.password}}</td>
+                </tr>
+               </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"> </div>
+</div>
+
+<!--
+     <ul class="list-group" *ngFor="let f of allfiles | async">
+                        <a href="{{f.url}}">{{f.name}}</a>
+                    </ul>
+-->

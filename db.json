@@ -1,0 +1,19 @@
+{
+  "userinfo": [
+    {
+      "id": "sahasra",
+      "uname": "sahasra",
+      "password": "s@123"
+    },
+    {
+      "id": "renuka",
+      "uname": "Renuka",
+      "password": "r@123"
+    },
+    {
+      "id": "vandana",
+      "uname": "Vandana",
+      "password": "v@123"
+    }
+  ]
+}
