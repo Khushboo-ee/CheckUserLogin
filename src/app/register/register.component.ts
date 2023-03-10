@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, Validators} from '@angular/forms';
+import { Router } from '@angular/router';
 import { LoginService } from '../login.service';
 
 @Component({
@@ -10,6 +11,7 @@ import { LoginService } from '../login.service';
 export class RegisterComponent implements OnInit {
 
   msg:any;
+  router: Router;
   constructor(
     private builder:FormBuilder, 
     private service:LoginService
@@ -36,4 +38,5 @@ export class RegisterComponent implements OnInit {
         this.msg="Invalid form";
       }
     }
+    
 }
